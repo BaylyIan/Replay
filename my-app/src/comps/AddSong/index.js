@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import {CgAdd} from "react-icons/cg";
-
-const MainCont = styled.div``;
 
 const Container = styled.div`
     background-color: #121212;

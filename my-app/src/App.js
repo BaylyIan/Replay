@@ -11,14 +11,11 @@ import SearchPlaylist from './pages/SearchPlaylist';
 import Profile from './pages/Profile';
 import ViewPlaylist from './pages/ViewPlaylist';
 import ViewProfile from './pages/ViewProfile';
-import Modal from './comps/Modal';
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  useHistory
+  Route
 } from "react-router-dom";
 
 function App() {

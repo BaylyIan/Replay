@@ -71,7 +71,7 @@ const IconContainer = styled.div`
 
 const HomeCont = styled(IconContainer)`
   &:after {
-    opacity: ${(props) => (props.active == 1 ? "1" : "0")};
+    opacity: ${(props) => (props.active === 1 ? "1" : "0")};
   }
 `;
 
@@ -83,19 +83,19 @@ const HomeCont = styled(IconContainer)`
 
 const PlusCont = styled(IconContainer)`
   &:after {
-    opacity: ${(props) => (props.active == 2 ? "1" : "0")};
+    opacity: ${(props) => (props.active === 2 ? "1" : "0")};
   }
 `;
 
 const ProfileCont = styled(IconContainer)`
   &:after {
-    opacity: ${(props) => (props.active == 3 ? "1" : "0")};
+    opacity: ${(props) => (props.active === 3 ? "1" : "0")};
   }
 `;
 
 const HomeIcon = styled.div`
   filter: ${(props) =>
-    props.active == 1
+    props.active === 1
       ? "invert(.3) sepia(1) saturate(2) hue-rotate(10deg) drop-shadow(0 5px 0px #8B3B3A)"
       : ""};
 `;
@@ -109,7 +109,7 @@ const HomeIcon = styled.div`
 
 const PlusIcon = styled.div`
   filter: ${(props) =>
-    props.active == 2
+    props.active === 2
       ? "invert(.3) sepia(1) saturate(2) hue-rotate(10deg) drop-shadow(0 5px 0px #8B3B3A)"
       : ""};
 `;
@@ -117,7 +117,7 @@ const PlusIcon = styled.div`
 
 const ProfileIcon = styled.div`
   filter: ${(props) =>
-    props.active == 3
+    props.active === 3
       ? "invert(.3) sepia(1) saturate(2) hue-rotate(10deg) drop-shadow(0 5px 0px #8B3B3A)"
       : ""};
 `;
@@ -128,17 +128,13 @@ const ProfileIcon = styled.div`
 //       : "drop-shadow(0 5px 0px #8B3B3A)"};
 // `;
 
-const Text = styled.p`
-  color: white;
-  font-size:10px;
-  margin: 13px 0px;
-`;
-
 const NavBar = ({ propActive }) => {
+  
   const [active, setActive] = useState(0);
+
   useEffect(() => {
     setActive(propActive);
-  });
+  }, [propActive]);
 
   const history = useHistory();
 

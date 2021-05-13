@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { VscHeart } from 'react-icons/vsc';
@@ -12,7 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   width: 321px;
   @media(max-width:768px){
-    background-color:purple;
+    /* background-color:purple; */
   }
   height: 190px;
   background: #1E1C21;

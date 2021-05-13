@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import {IoIosArrowForward} from 'react-icons/io';
@@ -8,13 +8,14 @@ const Container = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
+  /* background-color:red; */
 `;
 
 const PlaylistCardCont = styled.div`
     display:flex;
     margin-bottom:20px;
     height: 88px;
-    width: 60%;
+    width: 90%;
     background: #1E1C21;
     border-radius: 15px;
     align-items: center;

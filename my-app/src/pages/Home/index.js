@@ -47,7 +47,7 @@ const Home = () => {
     useEffect(() => {
         CheckToken();
         GetPlaylists();
-    }, []);
+    });
 
     return <div className="home-container">
         <div className="search">

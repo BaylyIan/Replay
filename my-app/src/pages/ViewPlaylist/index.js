@@ -6,8 +6,6 @@ import NavBar from "../../comps/NavBar";
 import PlaylistCover from "../../comps/PlaylistCover";
 import SongCard from "../../comps/SongCard";
 
-import {IoIosArrowForward} from 'react-icons/io';
-
 import {
     useHistory,
     useParams
@@ -64,7 +62,7 @@ const ViewPlaylist = () => {
         GetPlaylistInfo();
         GetAllSongs();
         // ViewProfile();
-    },[])
+    })
 
     return (
         <div className="playlist-container">
